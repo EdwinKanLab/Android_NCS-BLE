@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "155427393133",
+    "project_id": "ncsble",
+    "storage_bucket": "ncsble.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:155427393133:android:ffd21f67a57f1343b93964",
+        "android_client_info": {
+          "package_name": "com.ta.ncsble"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "155427393133-82tlsatqdpngro7nrisb81o6rm75t2ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAf5mZ_pUEz6WtbQzHNyBwcFKkadU3Ad7Y"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "155427393133-82tlsatqdpngro7nrisb81o6rm75t2ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
