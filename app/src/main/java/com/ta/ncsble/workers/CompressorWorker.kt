@@ -25,6 +25,7 @@ class CompressorWorker(appContext: Context, workerParams: WorkerParameters):
 
         val NCSData = File(ncsDirectory).resolve("NCSData")
         val Compressed = File(ncsDirectory).resolve("Compressed")
+        NCSData.mkdirs()
         Compressed.mkdirs()
 
         val dirsInNCSData: Array<File>? = NCSData.listFiles()

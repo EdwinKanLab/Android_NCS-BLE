@@ -118,9 +118,6 @@ class Recorder(val ncsDirectory : String, val BLE_MAC : String) {
         writeBufferPtr = 0
         binDiskWritePtr = 0
         NCSData.resolve(Utils.newBinDirName(BLE_MAC)).mkdirs()
-
-
-
     }
 
     fun putData(data : ByteArray?){

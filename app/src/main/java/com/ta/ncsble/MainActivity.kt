@@ -390,7 +390,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     fun buildAndRunWorkers(){
         val compressorBuilder =
-            PeriodicWorkRequestBuilder<CompressorWorker>(15, TimeUnit.MINUTES)
+            PeriodicWorkRequestBuilder<CompressorWorker>(17, TimeUnit.MINUTES)
 
 
         val compressorWork =
@@ -405,10 +405,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
             )
 
         val uploaderBuilder =
-            PeriodicWorkRequestBuilder<UploaderWorker>(20, TimeUnit.MINUTES)
-//        val uploaderBuilder =
-//            OneTimeWorkRequestBuilder<UploaderWorker>()
-
+            PeriodicWorkRequestBuilder<UploaderWorker>(23, TimeUnit.MINUTES)
 
         val uploaderConstraints = Constraints.Builder()
             .setRequiredNetworkType(NetworkType.UNMETERED)
@@ -425,10 +422,6 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
                 Constants.UPLOADER_WORK_NAME,
                 ExistingPeriodicWorkPolicy.REPLACE, uploaderWork
             )
-
-//        WorkManager.getInstance(this)
-//            .enqueueUniqueWork(Constants.UPLOADER_WORK_NAME,
-//                ExistingWorkPolicy.REPLACE,uploaderWork)
 
     }
 
